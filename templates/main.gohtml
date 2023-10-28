@@ -1,0 +1,12 @@
+{{template "header" .}}
+{{template "table" .}}
+<div maincontainer class="maincontainer">
+    <h1 id="book">統計検定準１級公式問題集</h1>
+    <h2 class="qInfo">{{.Date}} {{.qPart}}</h2> 
+    {{range .Questions}}
+    {{.Question}}
+    {{.Answer}}
+    {{.Explanation}}
+    {{end}}
+</div>
+{{template "footer" .}}
